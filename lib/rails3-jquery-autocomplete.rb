@@ -15,6 +15,11 @@ class ActionController::Base
 end
 
 require 'rails3-jquery-autocomplete/formtastic'
+begin
+  require 'formtastic-bootstrap'
+  require 'rails3-jquery-autocomplete/formtastic_bootstrap'
+rescue LoadError
+end
 
 begin
   require 'simple_form'
