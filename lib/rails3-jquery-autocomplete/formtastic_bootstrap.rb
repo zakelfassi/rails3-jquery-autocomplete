@@ -3,7 +3,7 @@
 #
 module FormtasticBootstrap
   module Inputs
-    class AutocompleteInput < Formtastic::Inputs::StringInput
+    class AutocompleteInput < FormtasticBootstrap::Inputs::StringInput
       include Base
       include Base::Stringish
 
